@@ -5,3 +5,7 @@
   box-sizing: border-box;
   font-family: 'Tangerine', serif;
 }
+
+body{
+  font-size: 18px;
+}
