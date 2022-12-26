@@ -1,0 +1,26 @@
+header{
+  background-color: #fff;
+  padding: 0;
+  border-bottom: 1px solid #e72929;
+}
+
+a{
+  color: #af1330;
+}
+
+a:hover{
+  color: #e72929;
+}
+
+#headerDiv{
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul{
+  list-style-type: none;
+}
+
+nav ul li a{
+  display: inline-block;
+}
