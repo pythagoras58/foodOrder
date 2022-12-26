@@ -8,10 +8,29 @@ ul{
   align-items: center;
   flex-wrap: wrap;
   list-style-type: none;
-  padding: 0;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+img{
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
 }
 
 ul li a{
   height: 20rem;
   width: 20rem;
+  border: 1px solid whitesmoke;
+  border-radius: 1rem;
+  /*margin: 0.5rem;*/
+  margin-bottom: 1rem;
+  flex-direction: column;
+  overflow: hidden;
+  color: #e72929;
+}
+
+li a:hover{
+  opacity: 0.9;
+  cursor: pointer;
 }
