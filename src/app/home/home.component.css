@@ -1,0 +1,17 @@
+#h{
+  margin-top: 2%;
+}
+
+ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li a{
+  height: 20rem;
+  width: 20rem;
+}
