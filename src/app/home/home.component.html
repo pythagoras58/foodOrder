@@ -1,9 +1,23 @@
 <app-header></app-header>
 
+<!--<div class="container" id="h">-->
+<!--  <ul>-->
+<!--    <li *ngFor="let f of foods">-->
+<!--      <a><img src="{{f.imageUrl}}" alt="Images"></a>-->
+<!--    </li>-->
+<!--  </ul>-->
+<!--</div>-->
+
 <div class="container" id="h">
-  <ul>
-    <li *ngFor="let f of foods">
-      <a><img src="{{f}}" alt="Images"></a>
-    </li>
-  </ul>
+  <div class="row">
+    <div class="col-md-4" *ngFor="let f of foods">
+      <div class="card" style="width: 18rem; margin: 5%">
+        <img src="{{f.imageUrl}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{f.name}}</h5>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

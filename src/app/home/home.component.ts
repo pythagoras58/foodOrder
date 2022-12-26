@@ -9,7 +9,7 @@ import {Foods}  from "../shared/models/foods";
 })
 export class HomeComponent implements OnInit {
 
-  private foods : any;
+   foods : Foods[] = [];
 
   constructor(private foodService : FoodService) { }
 
