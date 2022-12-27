@@ -11,7 +11,7 @@
 <div class="container" id="h">
   <div class="row">
     <div class="col-md-4" *ngFor="let f of foods">
-      <div class="card" style="width: 18rem; margin: 5%">
+      <div class="card" style="width: 18rem; margin: 5%; border-radius: 5%; box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);">
         <img src="{{f.imageUrl}}" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title text-center">{{f.name}} || {{f.price|currency}}</h5>
