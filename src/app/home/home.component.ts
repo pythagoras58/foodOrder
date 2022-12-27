@@ -15,7 +15,16 @@ export class HomeComponent implements OnInit {
   constructor(private foodService : FoodService, private router : ActivatedRoute) { }
 
   ngOnInit(): void {
-    this.foods = this.foodService.getAllFood();
+
+    this.router.params.subscribe((params)=>{
+      if(params['searchItem']){
+        this.foods = this.foodService.getAllFood().filter(food => food.name.toLowerCase().includes(params['searchItem'].toLowerCase()));
+      }else{
+        this.foods = this.foodService.getAllFood();
+      }
+    })
+
+
     console.log(this.foods)
   }
 
