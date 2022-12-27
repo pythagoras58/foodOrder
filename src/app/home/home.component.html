@@ -14,7 +14,7 @@
       <div class="card" style="width: 18rem; margin: 5%">
         <img src="{{f.imageUrl}}" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title text-center">{{f.name}} || {{f.price}}</h5>
+          <h5 class="card-title text-center">{{f.name}} || {{f.price|currency}}</h5>
           <h5 class="card-title">{{f.origin}} || {{f.tags}}</h5>
           <div class="text text-center"><span>⏰ </span>{{f.cookTime}}</div>
           <a href="#" class="btn btn-primary">Go somewhere</a>
