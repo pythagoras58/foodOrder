@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {FoodService} from "../services/food/food.service";
 import {Foods}  from "../shared/models/foods";
+import {ActivatedRoute} from "@angular/router";
 
 @Component({
   selector: 'app-home',
@@ -11,7 +12,7 @@ export class HomeComponent implements OnInit {
 
    foods : Foods[] = [];
 
-  constructor(private foodService : FoodService) { }
+  constructor(private foodService : FoodService, private router : ActivatedRoute) { }
 
   ngOnInit(): void {
     this.foods = this.foodService.getAllFood();
