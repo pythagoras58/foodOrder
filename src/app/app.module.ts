@@ -7,6 +7,7 @@ import {RouterModule} from "@angular/router";
 import {AppRoutingModule} from "./app-routing.module";
 import { HomeComponent } from './home/home.component';
 import {FormsModule} from "@angular/forms";
+import { SearchComponent } from './search/search.component';
 
 
 
@@ -14,7 +15,8 @@ import {FormsModule} from "@angular/forms";
   declarations: [
     AppComponent,
     HeaderComponent,
-    HomeComponent
+    HomeComponent,
+    SearchComponent
   ],
     imports: [
         BrowserModule,
