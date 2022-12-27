@@ -6,6 +6,9 @@ import { HeaderComponent } from './header/header.component';
 import {RouterModule} from "@angular/router";
 import {AppRoutingModule} from "./app-routing.module";
 import { HomeComponent } from './home/home.component';
+import {FormsModule} from "@angular/forms";
+
+
 
 @NgModule({
   declarations: [
@@ -16,7 +19,8 @@ import { HomeComponent } from './home/home.component';
     imports: [
         BrowserModule,
         RouterModule,
-        AppRoutingModule
+        AppRoutingModule,
+        FormsModule
     ],
   providers: [],
   bootstrap: [AppComponent]
