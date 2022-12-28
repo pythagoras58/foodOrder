@@ -122,4 +122,12 @@ export class FoodService {
       }
     ];
   }
+
+  getAllFoodByTags(tags : string) : Foods[]{
+    if(tags === 'All'){
+      return this.getAllFood();
+    } else{
+      return this.getAllFood().filter(food => food.tags?.includes(tags));
+    }
+  }
 }
