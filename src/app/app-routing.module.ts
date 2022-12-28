@@ -10,6 +10,10 @@ const routes : Routes =[
   {
     path : 'search/:searchItem',
     component : HomeComponent
+  },
+  {
+    path : 'tag/:tags',
+    component : HomeComponent
   }
 ]
 
