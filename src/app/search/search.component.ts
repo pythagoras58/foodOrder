@@ -20,7 +20,9 @@ export class SearchComponent implements OnInit {
   }
 
   searchFood() : void{
-
+    if(this.searchItem){
+      this.router.navigateByUrl('/search/' + this.searchItem);
+    }
   }
 
 }
