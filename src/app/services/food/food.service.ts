@@ -19,7 +19,7 @@ export class FoodService {
         origin : ['Ghana', 'Nigeria'],
         stars : 4.7,
         imageUrl : '/assets/images/bread-barrel.jpg',
-        tags : ['SlowFood', 'Lunch']
+        tags : ['FastFood', 'BreakFast']
       },
       {
         id : 2,
@@ -41,7 +41,7 @@ export class FoodService {
         origin : ['Ghana', 'Nigeria'],
         stars : 4.7,
         imageUrl : '/assets/images/cake.jpg',
-        tags : ['SlowFood', 'Lunch']
+        tags : ['FastFood', 'Lunch']
       },
       {
         id : 4,
@@ -52,7 +52,7 @@ export class FoodService {
         origin : ['Ghana', 'Nigeria'],
         stars : 4.7,
         imageUrl :  '/assets/images/greek-salad.jpg',
-        tags : ['SlowFood', 'Lunch']
+        tags : ['SlowFood', 'Supper']
       },
       {
         id : 5,
@@ -63,7 +63,7 @@ export class FoodService {
         origin : ['Ghana', 'Nigeria'],
         stars : 4.7,
         imageUrl :  '/assets/images/lobster-bisque.jpg',
-        tags : ['SlowFood', 'Lunch']
+        tags : ['FastFood', 'Supper']
       },
       {
         id : 6,
