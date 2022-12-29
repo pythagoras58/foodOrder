@@ -8,6 +8,7 @@ import {AppRoutingModule} from "./app-routing.module";
 import { HomeComponent } from './home/home.component';
 import {FormsModule} from "@angular/forms";
 import { SearchComponent } from './search/search.component';
+import { TagsComponent } from './tags/tags.component';
 
 
 
@@ -16,7 +17,8 @@ import { SearchComponent } from './search/search.component';
     AppComponent,
     HeaderComponent,
     HomeComponent,
-    SearchComponent
+    SearchComponent,
+    TagsComponent
   ],
     imports: [
         BrowserModule,

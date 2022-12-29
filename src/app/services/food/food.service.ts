@@ -130,4 +130,8 @@ export class FoodService {
       return this.getAllFood().filter(food => food.tags?.includes(tags));
     }
   }
+
+  getAllTags() : void{
+
+  }
 }
