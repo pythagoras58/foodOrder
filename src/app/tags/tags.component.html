@@ -1,63 +1,7 @@
-<div class="container" id="h">
+<div class="container" id="h" *ngIf="tags">
   <div class="row">
-    <div class="col-md-2">
-      <button type="button" class="btn btn-primary position-relative">
-        Inbox
-        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-    99+
-    <span class="visually-hidden">unread messages</span>
-  </span>
-      </button>
-    </div>
-
-    <div class="col-md-2">
-      <button type="button" class="btn btn-primary position-relative">
-        Inbox
-        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-    99+
-    <span class="visually-hidden">unread messages</span>
-  </span>
-      </button>
-    </div>
-
-    <div class="col-md-2">
-      <button type="button" class="btn btn-primary position-relative">
-        Inbox
-        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-    99+
-    <span class="visually-hidden">unread messages</span>
-  </span>
-      </button>
-    </div>
-
-    <div class="col-md-2">
-      <button type="button" class="btn btn-primary position-relative">
-        Inbox
-        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-    99+
-    <span class="visually-hidden">unread messages</span>
-  </span>
-      </button>
-    </div>
-
-    <div class="col-md-2">
-      <button type="button" class="btn btn-primary position-relative">
-        Inbox
-        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-    99+
-    <span class="visually-hidden">unread messages</span>
-  </span>
-      </button>
-    </div>
-
-    <div class="col-md-2">
-      <button type="button" class="btn btn-primary position-relative">
-        Inbox
-        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-    99+
-    <span class="visually-hidden">unread messages</span>
-  </span>
-      </button>
-    </div>
+      <div class="col-md-2" *ngFor="let t of tags">
+        <button type="button" class="btn btn-outline-danger" routerLink="/tag/{{t.name}}">{{t.name}} || ({{t.count}})</button>
+      </div>
   </div>
 </div>
